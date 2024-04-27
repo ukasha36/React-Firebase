@@ -5,6 +5,7 @@ import {
 import App from "../../App";
 import ProductDetailPage from "../pages/ProductDetail/ProductDetailPage";
 import AddProductPage from "../pages/dashboard/AddProductPage";
+import Admindashboard from "../pages/dashboard/Admindashboard";
 
 
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
     {
         path: "/add-product",
         element: <AddProductPage />
+    },
+    {
+        path: "/dashboard",
+        element: <Admindashboard />
     },
 ]);
 

@@ -2,6 +2,7 @@ import { child, get, push, ref, set } from "firebase/database"
 import { db } from "../config/firebase.config"
 import { productEntity } from "../lib/firebase.entities"
 
+
 const dbRef = ref(db)
 
 export const getAllProducts = async () => {
@@ -35,10 +36,16 @@ export const addProduct = (data) => {
 
 export const getProductById = async (pid) => {
     try {
-        return {
-            name: 'kjkjkjk'
+        const productRef = child(dbRef, `products/${pid}`);
+        const snapshot = await get(productRef);
+
+        if (snapshot.exists()) {
+            return snapshot.val();
+        } else {
+            throw new Error(`Product with ID ${pid} not found`);
         }
     } catch (error) {
-        console.error('Error', error)
+        console.error('Error fetching product:', error);
+        throw error; // Rethrow the error so it can be caught and handled by the calling code
     }
-}
+};

@@ -1,0 +1,196 @@
+/* Basic styling for all HTML tags */
+* {
+    font-family: Arial, sans-serif; /* Change the font to your preference */
+    color: #333; /* Default text color */
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 10px; /* Add some space below headings */
+  }
+  
+  /* Paragraphs */
+  p {
+    line-height: 1.5; /* Improve readability with slightly increased line height */
+  }
+  
+  /* Links */
+  a {
+    color: #007bff; /* Change link color */
+    text-decoration: none; /* Remove default underline */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Underline links on hover */
+  }
+  
+  /* Lists */
+  ul, ol {
+    margin-bottom: 10px; /* Add some space below lists */
+  }
+  
+  /* List Items */
+  li {
+    margin-bottom: 5px; /* Add space between list items */
+  }
+  
+  /* Images */
+  img {
+    max-width: 100%; /* Ensure images don't exceed their container width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Blockquotes */
+  blockquote {
+    margin: 0; /* Remove default margin */
+    padding: 10px 20px; /* Add padding to blockquotes */
+    background-color: #f9f9f9; /* Light gray background color */
+    border-left: 4px solid #007bff; /* Colored left border */
+  }
+  
+  /* Code Blocks */
+  pre {
+    padding: 10px; /* Add padding to code blocks */
+    background-color: #f5f5f5; /* Light gray background color */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 5px; /* Rounded corners */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', monospace; /* Monospace font for code */
+    color: #333; /* Default text color */
+  }
+
+  /* Input Fields */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+textarea,
+select {
+  padding: 8px; /* Add padding to input fields */
+  border: 1px solid #ccc; /* Add a border to input fields */
+  border-radius: 5px; /* Add rounded corners */
+  font-size: 16px; /* Set font size */
+  width: 30%; /* Make input fields fill their container */
+}
+
+/* Style for focused input fields */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+textarea:focus,
+select:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #007bff; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add a subtle shadow on focus */
+}
+
+/* Style for disabled input fields */
+input[type="text"]:disabled,
+input[type="password"]:disabled,
+input[type="email"]:disabled,
+input[type="number"]:disabled,
+input[type="tel"]:disabled,
+input[type="url"]:disabled,
+textarea:disabled,
+select:disabled {
+}
+
+button {
+    padding: 8px 12px; /* Add padding to buttons */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hoverable elements */
+    font-size: 12px; 
+}
+
+.shortimg{
+  width: 200px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+.largeimg{
+  width: 500px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+.box{
+  display: flex;
+  width: 320px;
+  height: 300px;
+  flex-direction: column;
+  border: 1px solid rgba(158,139,136,0.33);
+background: #e8e1e1;
+align-items: center;
+margin-left: 50px ;
+}
+.main{
+  display: flex;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.productDetails{
+  display:flex ;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+}
+.adminheader{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+height: 100px;
+align-items: center;
+}
+.adminheaderbtn{
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  align-items: center;
+}
+.image-upload-button {
+  display: block; /* Make it act like a button element */
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  color: #333;
+  text-align: center;
+}
+
+.image-upload-button:hover {
+  background-color: #ddd;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  color: #2b2a2a;
+  background-color: #1812152d;
+  border: 1px solid #007bff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.custom-file-upload:hover {
+  background-color: #0056b3;
+}
+
+.logo{
+  height: 70px;
+  width: 100px;
+}

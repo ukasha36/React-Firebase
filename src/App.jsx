@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { getAllProducts } from "./services/products.service"
 import ProductCard from "./components/product/ProductCard"
+import logo from '/src/assets/img.jpg';
 
 
 function App() {
@@ -17,12 +18,16 @@ function App() {
   
   return (
     <>
-      <h1>Product Listing</h1>
+       <img className="logo" src={logo} alt="" />
+
+      <h1>Products List</h1>
+      <div className="main">
       {
         products.map((product, idx) => {
-          return <ProductCard {...product} />
+          return <  ProductCard key={idx} {...product}  />
         })
       }
+      </div>
     </>
   )
 }
