@@ -31,7 +31,7 @@ const Admindashboard = () => {
       <div className="adminheaderbtn">
       <Link to="/"> <button>Home</button></Link>
 
-      <Link to="/add-product"><button >Add Products  </button> </Link>    
+      <Link to="/addproduct"><button >Add Products  </button> </Link>    
         <button>Logout </button>
         
         </div>
